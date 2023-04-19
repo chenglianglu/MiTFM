@@ -22,4 +22,4 @@
 
 ## Data
 
-The events log for the predictive busienss process monitoring can be found at [4TU Research Data](https://data.4tu.nl/categories/_/13500?categories=13503)
+The events log for the predictive busienss process monitoring can be found at [4TU Research Data](https://data.4tu.nl)
