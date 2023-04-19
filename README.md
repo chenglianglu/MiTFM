@@ -6,11 +6,11 @@
 
 `python Read_all_log.py`
 
-**To train, validate, and test the model, run:  (Example of event log bpi13_incidents)**
+**To train, validate, and test the model, run:  (Example of event log BPI Challenge 2013 incidents)**
 
 `python MiTFM.py --eventlog=bpi13_incidens --gpu=0`
 
-**To load the saved model and test it on the test set, run:  (Example of event log bpi13_incidents)**
+**To load the saved model and test it on the test set, run:  (Example of event log BPI Challenge 2013 incidents)**
 
 `python Test.py --eventlog=bpi13_incidents`
 
