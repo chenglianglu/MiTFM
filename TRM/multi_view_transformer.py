@@ -126,7 +126,7 @@ class EncoderLayer(nn.Module):
         self.pos_ffn = PoswiseFeedForwardNet(d_model, d_ff)
         self.n_heads = n_heads
     def forward(self, enc_inputs, enc_self_attn_mask):
-        """E
+        """
         enc_inputs: [batch_size, src_len, d_model]
         enc_self_attn_mask: [batch_size, src_len, src_len]  mask矩阵(pad mask or sequence mask)
         """
@@ -161,12 +161,8 @@ class Encoder(nn.Module):
         self.dict_cat_emb = dict_cat_emb
         self.layers = nn.ModuleList([EncoderLayer(d_model, n_heads, d_ff) for _ in range(n_layers)])
     def forward(self, att_str, att):
-        """
-        enc_inputs: [batch_size, src_len]
-        """
+        # A dictionary contains the attribute names and the corresponding k-prefix views
         att_dict = dict(zip(att_str, att))
-        # print(pr.format(i, *att))
-        # 嵌入层
         list_cat_view = []
         list_cat_view_original = []
         for c in self.cat_view:
